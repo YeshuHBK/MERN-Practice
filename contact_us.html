@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML 5 : Forms</title>
+    </head>
+    <body>
+        <h2>Form Example</h2>
+
+        <form action="/server.program" method="post">
+
+        <label for="name">Full Name:</label>
+        <input type="text" name="name" placeholder="Enter Your Name" required> <br/> <br>
+
+        <label for="email">Email:</label>
+        <input type="text" name="email" placeholder="Enter Your Email" required> <br/> <br>
+
+        <label for="password">Password:</label>
+        <input type="password" name="password" placeholder="Create a password" required> <br/> <br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" min="18" max="99" placeholder="Enter Your Age" required> <br/> <br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" placeholder="123-345-6789" required> <br/> <br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" name="dob" required> <br/> <br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female
+        <input type="radio" name="gender" value="other">Other <br/> <br>
+
+        <label for="skills">Skills:</label>
+        <input type="checkbox" name="skills" value="HTML">HTML
+        <input type="checkbox" name="skills" value="CSS">CSS
+        <input type="checkbox" name="skills" value="Javascript">Javascript <br/> <br>
+
+        <label for="country"> Country : </label>
+        <select name="country" id="">
+            <option value="">Select your country</option>
+            <option value="india">India</option>
+            <option value="usa">United States</option>
+            <option value="uk">United Kingdom</option>
+            <option value="canada">Canada</option>
+        </select> <br/> <br>
+
+        <label for="message">Your Message:</label> <br>
+        <textarea name="message" rows="4" placeholder="Write your message here..."></textarea> <br> <br>
+
+        <input type="hidden" name="source" value="website_form">
+
+        <label for="search">Search:</label>
+        <input type="search" name="search" placeholder="Search here ..."> <br/> <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+        </form>
+    </body>
+</html>
